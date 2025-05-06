@@ -1,0 +1,14 @@
+d1 = int(input("digit1 (0-9): "))
+d2 = int(input("digit2 (0-9): "))
+d3 = int(input("digit3 (0-9): "))
+
+if 0 <= d1 <= 9 and 0 <=9 and 0 <= d3 <= 9:
+    digits = [d1, d2, d3]
+
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                if i != j and j != k and i != k:
+                    print(digits[i], digits[j], digits[k], sep="")
+else:
+    print("Invalid")
